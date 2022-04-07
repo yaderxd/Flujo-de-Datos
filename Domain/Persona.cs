@@ -26,10 +26,14 @@ namespace Domain
         public int Edad { get => edad; set => edad = value; }
         public string Cedula { get => cedula; set => cedula = value; }
 
-        Persona[] GrupoPersona =
+        public static Persona[] GrupoPersona =
         {
             new Persona(){Nombre="Cesar",Apellido="Jafet",Edad=18,Cedula="1265664435"},
              new Persona(){Nombre="yader",Apellido="Mendez",Edad=19,Cedula="126566435435"}
         };
+        public static Persona[] GetPersonas()
+        {
+            return GrupoPersona;
+        }
     }
 }
